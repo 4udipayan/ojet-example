@@ -1,0 +1,17 @@
+<div class="oj-hybrid-padding">
+    <h1>Data Table Content Area</h1>
+    <div>
+        <oj-label for="typeSelect">Type</oj-label>
+        <oj-select-one id="typeSelect" value="{{type}}" style="max-width:20em">
+            <oj-option value="A">A</oj-option>
+            <oj-option value="B">B</oj-option>
+        </oj-select-one>
+        
+        <oj-table id='table' aria-label='Data Table' data='[[dataprovider]]'
+            selection-mode='{"row": "multiple", "column": "multiple"}' dnd='{"reorder": {"columns": "enabled"}}'
+            scroll-policy='loadMoreOnScroll' scroll-policy-options='{"fetchSize": 10}' columns='[[columnList]]'
+            style='width: 100%; height: 300px;'>
+        </oj-table>
+
+    </div>
+</div>

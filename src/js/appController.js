@@ -22,6 +22,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojmodule-el
        self.router = oj.Router.rootInstance;
        self.router.configure({
          'dashboard': {label: 'Dashboard', isDefault: true},
+         'dataTable': {label: 'Data Table'},
          'incidents': {label: 'Incidents'},
          'customers': {label: 'Customers'},
          'about': {label: 'About'}
@@ -51,6 +52,8 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojmodule-element-utils', 'ojs/ojmodule-el
       var navData = [
       {name: 'Dashboard', id: 'dashboard',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'},
+      {name: 'Data Table', id: 'dataTable',
+       iconClass: 'oj-navigationlist-item-icon demo-catalog-icon-24 demo-icon-font-24'},
       {name: 'Incidents', id: 'incidents',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'},
       {name: 'Customers', id: 'customers',
